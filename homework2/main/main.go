@@ -26,7 +26,7 @@ func main() {
 
 	sort.SortByInserts(inputNums)
 
-	println("Sorted list: ")
+	fmt.Println("Sorted list: ")
 
 	for i := range inputNums {
 		fmt.Println(inputNums[i])
