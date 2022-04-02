@@ -18,7 +18,8 @@ func main() {
 		num, err := strconv.ParseInt(scanner.Text(), 10, 64)
 
 		if err != nil {
-			panic(err)
+			fmt.Println(err)
+			return
 		}
 
 		inputNums = append(inputNums, int(num))

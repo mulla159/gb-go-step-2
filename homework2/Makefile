@@ -12,16 +12,16 @@ test:
 
 ## build: запустить сборку приложения для текущей ОС
 build:
-	go build -o ./main ./main/main.go
+	go build -o ./dist ./main/main.go
 
 ## build-windows: запустить сборку приложения для Windows
 build-windows:
-	GOOS=windows go build -o ./main ./main/main.go
+	GOOS=windows go build -o ./dist ./main/main.go
 	file ./main/main.exe
 
 ## build-linux: запустить сборку приложения для Linux
 build-linux:
-	GOOS=linux go build -o ./main ./main/main.go
+	GOOS=linux go build -o ./dist ./main/main.go
 	file ./main/main
 
 ## doc-sort: вывести документацию пакета sort
